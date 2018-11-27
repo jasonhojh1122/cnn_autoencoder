@@ -1,7 +1,7 @@
 '''
 fitting parameters
 '''
-epochs = 50
+epochs = 1
 batch_size = 128
 
 '''

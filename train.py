@@ -6,6 +6,7 @@ import keras
 import numpy as np
 import matplotlib.pyplot as plt
 import hyper_parameter as p
+import time
 
 
 def generate_autoencoder(start):
@@ -78,6 +79,7 @@ history = autoencoder.fit(x_train, x_train,
                 batch_size=p.batch_size,
                 shuffle=True,
                 validation_data=(x_test, x_test))
+
 
 with open('training-data/loss.txt', 'w') as f:
 	all_loss = history.history['loss']
